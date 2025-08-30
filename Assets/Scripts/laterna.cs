@@ -1,21 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class laterna : MonoBehaviour
 {
-    // Start is called before the first frame update
-    // Referência à luz que será controlada
-    public Light luz;
+    // Referência à _light que será controlada
+    public Light _light;
 
-    // Estado da luz (opcional)
-    private bool luzLigada = true;
+    // Estado da _light (opcional)
+    private bool _on = true;
 
     void Start()
     {
-        if (luz == null)
+        if (_light == null)
         {
-            luz = GetComponent<Light>();
+            _light = GetComponent<Light>();
         }
     }
 
@@ -24,8 +21,18 @@ public class laterna : MonoBehaviour
         // Verifica se a tecla L foi pressionada
         if (Input.GetKeyDown(KeyCode.F))
         {
-            luzLigada = !luzLigada;     // Alterna o estado
-            luz.enabled = luzLigada;    // Liga ou desliga a luz
+            //Ligar e desligar a luz
+            switch (_on)
+            {
+                case true:
+                    _on = false;
+                    _light.enabled = false;
+                    break;
+                case false:
+                    _on = true;
+                    _light.enabled = true;
+                    break;
+            }  
         }
     }
 }
