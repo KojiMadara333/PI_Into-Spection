@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class luzpiscando : MonoBehaviour
 {
-    public Light luz;                // Referência à luz
-    private bool luzLigada = true;  // Estado atual da luz
+    public Light luz;                // Referência à _light
+    private bool luzLigada = true;  // Estado atual da _light
     private float tempoTotal = 0f;  // Tempo desde o início
     private float intervaloPiscar = 0.5f;  // Intervalo de piscar (em segundos)
     private float tempoPiscar = 0f; // Temporizador para piscar
