@@ -45,4 +45,9 @@ public class player : MonoBehaviour
         }
 
     }
+
+    public void killPlayer()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
