@@ -30,6 +30,11 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene("inicio");
     }
 
+    public void menuButtaion()
+    {
+        SceneManager.LoadScene("menu");
+    }
+
     public void manualButtaion()
     {
         SceneManager.LoadScene("manual");

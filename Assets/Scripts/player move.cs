@@ -53,7 +53,16 @@ public class playermove : MonoBehaviour
         {
             _playerRB.velocity = new Vector3(_playerRB.velocity.x, pulo, _playerRB.velocity.z);
         }
-     
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            speed = 20; // Dobra a velocidade
+        }
+        else if (Input.GetKeyUp(KeyCode.C))
+        {
+            speed = 5; // Volta à velocidade normal ao soltar a tecla
+        }
+
     }
 
     private void FixedUpdate()
