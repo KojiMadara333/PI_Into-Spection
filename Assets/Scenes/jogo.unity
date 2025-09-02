@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 367664}
   - component: {fileID: 367666}
   - component: {fileID: 367665}
+  - component: {fileID: 367667}
   m_Layer: 0
   m_Name: fanstasma
   m_TagString: Untagged
@@ -290,6 +291,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &367667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa1af9381920304ab8eb9a5c238e289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invisibilityDuration: 2
+  invisibilityCooldown: 5
 --- !u!1 &2326898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1130,7 @@ Transform:
   - {fileID: 1106176071}
   - {fileID: 2118333937}
   - {fileID: 1934944611}
+  - {fileID: 902241857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &264498020
@@ -1402,7 +1418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314251653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -292, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1826,7 +1842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465970347}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: caminho da plataforma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1840,12 +1856,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465970346}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -291.21405, y: 18.51, z: 10.78}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.7840576, y: 14.74, z: -19.650002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 902241857}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471800311 stripped
 GameObject:
@@ -4045,6 +4061,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.09402922, y: 0.18792924, z: 0.07287529}
   m_Center: {x: -0.00004656986, y: 0.00393457, z: -0.026437648}
+--- !u!1 &902241856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902241857}
+  m_Layer: 0
+  m_Name: caminho
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902241857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902241856}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.184601, y: -2.2730813, z: -5.8670454}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1621388938}
+  - {fileID: 465970347}
+  m_Father: {fileID: 237913481}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &967486835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10725,6 +10774,7 @@ GameObject:
   - component: {fileID: 1559673295}
   - component: {fileID: 1559673294}
   - component: {fileID: 1559673293}
+  - component: {fileID: 1559673298}
   m_Layer: 3
   m_Name: Matador
   m_TagString: Untagged
@@ -10739,7 +10789,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559673292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a238a0953cb1b6342af62e3c30461f85, type: 3}
   m_Name: 
@@ -10834,6 +10884,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 237913481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559673298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559673292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fbd6ff383bb874d8f6309d6ee6b4b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  playerRB: {fileID: 2029530220}
 --- !u!1001 &1598939536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10920,7 +10986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621388938}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: caminho da plataforma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10934,12 +11000,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621388937}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -291.21405, y: 0.59, z: 10.78}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.7840576, y: -3.18, z: -33.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 902241857}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1630524104
 PrefabInstance:
@@ -12133,7 +12199,7 @@ GameObject:
   - component: {fileID: 1934944607}
   - component: {fileID: 1934944606}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: plataforma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13132,11 +13198,9 @@ SceneRoots:
   - {fileID: 429796256}
   - {fileID: 1066454304}
   - {fileID: 2326899}
-  - {fileID: 1621388938}
-  - {fileID: 465970347}
   - {fileID: 1104008384}
-  - {fileID: 1172566496}
   - {fileID: 314251656}
+  - {fileID: 1172566496}
   - {fileID: 1221199829}
   - {fileID: 1210332724}
   - {fileID: 367663}
