@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c69f0868e8cec804ca11dfe53338967c, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (9)
@@ -871,6 +875,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (15)
@@ -974,6 +982,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86ed6fb62e191124081453d021d42a10, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (17)
@@ -1046,6 +1058,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86ed6fb62e191124081453d021d42a10, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (20)
@@ -1087,8 +1103,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1778655448}
   - {fileID: 1444634817}
+  - {fileID: 1778655448}
+  - {fileID: 711613047}
+  - {fileID: 1658017757}
+  - {fileID: 574901736}
+  - {fileID: 561463835}
   - {fileID: 1559673297}
   - {fileID: 566366894}
   - {fileID: 510553967}
@@ -1157,6 +1177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd8a586c9bdec944686fd92551493cfd, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (16)
@@ -1229,6 +1253,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86ed6fb62e191124081453d021d42a10, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (27)
@@ -1513,6 +1541,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (21)
@@ -1585,6 +1617,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (23)
@@ -1902,6 +1938,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0f7143c0f9fab24dbd6746c86be8e84, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (10)
@@ -2335,6 +2375,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559153861}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &561463834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561463835}
+  - component: {fileID: 561463838}
+  - component: {fileID: 561463837}
+  - component: {fileID: 561463836}
+  m_Layer: 3
+  m_Name: WallD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &561463835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561463834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -14.299999, y: -1.2999997, z: -32.5}
+  m_LocalScale: {x: 11.349016, y: 1, z: 65.787926}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237913481}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!65 &561463836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561463834}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &561463837
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561463834}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &561463838
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561463834}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &566366893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,6 +2517,111 @@ Transform:
   - {fileID: 1998857884}
   m_Father: {fileID: 237913481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &574901735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574901736}
+  - component: {fileID: 574901739}
+  - component: {fileID: 574901738}
+  - component: {fileID: 574901737}
+  m_Layer: 3
+  m_Name: WallU
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &574901736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574901735}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -14.3, y: -1.2999997, z: 90.3}
+  m_LocalScale: {x: 11.349016, y: 1, z: 65.787926}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237913481}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!65 &574901737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574901735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &574901738
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574901735}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &574901739
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574901735}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &588679220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2432,6 +2682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
     - target: {fileID: 919132149155446097, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
       propertyPath: m_Name
       value: Coluna (1)
@@ -2728,6 +2982,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d3fee19e696854f8a6b7c7709ac8ad, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (31)
@@ -2800,6 +3058,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
     - target: {fileID: 919132149155446097, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
       propertyPath: m_Name
       value: Coluna
@@ -2978,6 +3240,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &711613046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711613047}
+  - component: {fileID: 711613050}
+  - component: {fileID: 711613049}
+  - component: {fileID: 711613048}
+  m_Layer: 3
+  m_Name: WallR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &711613047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711613046}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 17.3, y: -1.3, z: 28.56}
+  m_LocalScale: {x: 11.349016, y: 1, z: 124.49}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237913481}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!65 &711613048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711613046}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &711613049
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711613046}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &711613050
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711613046}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &712196505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3038,6 +3405,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d3fee19e696854f8a6b7c7709ac8ad, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (22)
@@ -3141,6 +3512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9fbd7e94d90b6334290266e3d082ed94, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (7)
@@ -3213,6 +3588,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd8a586c9bdec944686fd92551493cfd, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (24)
@@ -3390,6 +3769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a52e040d122569468facb29dc040175, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (14)
@@ -3722,6 +4105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d3fee19e696854f8a6b7c7709ac8ad, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (19)
@@ -3831,6 +4218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (26)
@@ -3908,6 +4299,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d3fee19e696854f8a6b7c7709ac8ad, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (32)
@@ -3980,6 +4375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
     - target: {fileID: 919132149155446097, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
       propertyPath: m_Name
       value: Coluna (5)
@@ -4080,6 +4479,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a52e040d122569468facb29dc040175, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (12)
@@ -4571,7 +4974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.01001
+      value: 22.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5088,6 +5491,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -664699550315473532, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar
@@ -5296,6 +5703,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
     - target: {fileID: 919132149155446097, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
       propertyPath: m_Name
       value: Coluna (2)
@@ -5365,6 +5776,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
     - target: {fileID: 919132149155446097, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
       propertyPath: m_Name
       value: Coluna (4)
@@ -10479,6 +10894,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (28)
@@ -10582,6 +11001,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (29)
@@ -10594,6 +11017,111 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1234780319}
   m_SourcePrefab: {fileID: 100100000, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+--- !u!1 &1658017756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1658017757}
+  - component: {fileID: 1658017760}
+  - component: {fileID: 1658017759}
+  - component: {fileID: 1658017758}
+  m_Layer: 3
+  m_Name: WallL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1658017757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658017756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -47.900005, y: -1.2999997, z: 28.56}
+  m_LocalScale: {x: 11.349016, y: 1, z: 124.49}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237913481}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!65 &1658017758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658017756}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1658017759
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658017756}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1658017760
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658017756}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1662881100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
@@ -10647,7 +11175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.570007
+      value: 16.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10685,6 +11213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9fbd7e94d90b6334290266e3d082ed94, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (2)
@@ -10793,6 +11325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6291e15409b2dff4cbbf3774f9f496ac, type: 2}
     - target: {fileID: 919132149155446097, guid: ad823bae3639e0b4ca454be480c664cb, type: 3}
       propertyPath: m_Name
       value: Coluna (3)
@@ -10998,6 +11534,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (4)
@@ -11357,6 +11897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86ed6fb62e191124081453d021d42a10, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (34)
@@ -11429,6 +11973,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd8a586c9bdec944686fd92551493cfd, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (13)
@@ -11782,6 +12330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9fbd7e94d90b6334290266e3d082ed94, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (11)
@@ -11854,6 +12406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d3fee19e696854f8a6b7c7709ac8ad, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (18)
@@ -12031,6 +12587,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 7056198729947269887, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (8)
@@ -12103,6 +12663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d3fee19e696854f8a6b7c7709ac8ad, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (33)
@@ -12216,6 +12780,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a52e040d122569468facb29dc040175, type: 2}
     - target: {fileID: 919132149155446097, guid: 7d291233210e91447a7ed619cc64dff3, type: 3}
       propertyPath: m_Name
       value: BlueCar (3)
