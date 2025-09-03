@@ -7,6 +7,7 @@ public class inimigoControle : MonoBehaviour
 {
     public float velocidade = 5;
     Rigidbody fisica;
+  
 
     public Transform[] PontosRota;
     public int pontoAtual = 0;
