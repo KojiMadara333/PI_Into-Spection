@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class luzpiscando : MonoBehaviour
@@ -10,14 +8,6 @@ public class luzpiscando : MonoBehaviour
     private float intervaloPiscar = 0.5f;  // Intervalo de piscar (em segundos)
     private float tempoPiscar = 0f; // Temporizador para piscar
     private bool comecarPiscar = false; // Controle para iniciar a piscada
-
-    void Start()
-    {
-        if (luz == null)
-        {
-            luz = GetComponent<Light>();
-        }
-    }
 
     void Update()
     {

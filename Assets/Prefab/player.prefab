@@ -99,11 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42113f40e1b7b9f42af34630115f4cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerRB: {fileID: 0}
-  _playerCam: {fileID: 0}
+  _playerRB: {fileID: 564897335826207688}
   _ground:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!114 &7510628713104952241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,13 +339,13 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.9819645, b: 0.6933962, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.9
   m_Range: 10.99284
-  m_SpotAngle: 34.143356
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 47
+  m_InnerSpotAngle: 21
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -402,4 +401,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c690da903969978458df4e2b524eecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  luz: {fileID: 8033156053265171400}
+  _light: {fileID: 8033156053265171400}
