@@ -6,19 +6,24 @@ public class fanstama : MonoBehaviour
 {
     public Rigidbody fantasmaRb;
     public Transform playerTransform;
-    int speed = 4;
+    public float speed = 4;
 
     public AudioSource audioSource;
 
-    public float raioataque = 8;
+    public float raioataque = 5f;
     public Transform posataque;
 
     private bool jogadorDetectado = false;
 
-    // Start is called before the first frame update
+    // Movimento aleatório
+    private Vector3 direcaoAleatoria;
+    private float tempoTrocaDirecao = 2f; // tempo entre mudanças de direção
+    private float cronometroTroca = 0f;
+
     void Start()
     {
-        
+        // Define uma direção inicial aleatória
+        MudarDirecaoAleatoria();
     }
 
     void Update()
@@ -31,9 +36,19 @@ public class fanstama : MonoBehaviour
         }
         else
         {
-            fantasmaRb.velocity = Vector3.zero; // Para o inimigo caso o jogador não tenha sido detectado
+            MovimentoAleatorio();
         }
     }
+
+    void OnDrawGizmosSelected()
+    {
+        if (posataque != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(posataque.position, raioataque);
+        }
+    }
+
 
     void DetectarJogador()
     {
@@ -43,7 +58,7 @@ public class fanstama : MonoBehaviour
         {
             jogadorDetectado = true;
 
-            // (Opcional) Tocar som ao detectar o jogador pela primeira vez
+            // (Opcional) Tocar som ao detectar o jogador
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();
@@ -55,5 +70,24 @@ public class fanstama : MonoBehaviour
     {
         Vector3 direcao = (playerTransform.position - transform.position).normalized;
         fantasmaRb.velocity = direcao * speed;
+    }
+
+    void MovimentoAleatorio()
+    {
+        cronometroTroca += Time.deltaTime;
+
+        if (cronometroTroca >= tempoTrocaDirecao)
+        {
+            MudarDirecaoAleatoria();
+            cronometroTroca = 0f;
+        }
+
+        fantasmaRb.velocity = direcaoAleatoria * speed * 0.5f; // move mais devagar no modo aleatório
+    }
+
+    void MudarDirecaoAleatoria()
+    {
+        // Cria uma direção aleatória no plano XZ (horizontal)
+        direcaoAleatoria = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f)).normalized;
     }
 }

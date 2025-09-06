@@ -5031,8 +5031,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fantasmaRb: {fileID: 2377171607801519514}
   playerTransform: {fileID: 5726412906836574704}
+  speed: 4
   audioSource: {fileID: 1289949859986704059}
-  raioataque: 5
+  raioataque: 10
   posataque: {fileID: 3622609512934653428}
 --- !u!82 &1289949859986704059
 AudioSource:
