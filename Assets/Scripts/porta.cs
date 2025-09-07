@@ -7,6 +7,8 @@ public class porta : MonoBehaviour
     private bool isRotating = false;
     private Quaternion targetRotation;
 
+   // public AudioSource audioSource;
+
     void Update()
     {
         // Detecta o clique do mouse

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.UI.GridLayoutGroup;
 
 
 public class playermove : MonoBehaviour
@@ -10,7 +12,7 @@ public class playermove : MonoBehaviour
 
     public LayerMask _ground;
 
-    int speed = 5;
+    float speed = 5;
     int lookspeed = 10;
     int pulo = 7;
     
@@ -18,8 +20,20 @@ public class playermove : MonoBehaviour
     float mouseX, mouseY;
     Vector3 movedi;
 
+    public AudioSource audioSource;
+
+    private float normalSpeed = 5f;
+    private float runSpeed = 15f;
+    private float tiredSpeed = 2f;
+    private float tiredDuration = 4f;
+    private bool isTired = false;
+    //runSpeed: velocidade enquanto corre.
+    //tiredSpeed: velocidade quando está cansado.
+    //tiredDuration: tempo que o jogador fica cansado depois de correr.
+    //isTired: evita que o jogador corra se ainda estiver cansado.
+
     // Start is called before the first frame update
-    void Start()
+        void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -55,14 +69,14 @@ public class playermove : MonoBehaviour
         }
 
         // correr
-        // tem que colocar um tempo
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && !isTired)
         {
-            speed = 20; // Dobra a velocidade
+            speed = runSpeed;
         }
-        else if (Input.GetKeyUp(KeyCode.C))
+        else if (Input.GetKeyUp(KeyCode.C) && !isTired)
         {
-            speed = 5; // Volta à velocidade normal ao soltar a tecla
+            // Inicia o estado de cansaço
+            StartCoroutine(GetTired());
         }
 
     }
@@ -82,5 +96,14 @@ public class playermove : MonoBehaviour
     {
        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
+    }
+
+    IEnumerator GetTired()
+    {
+        isTired = true;
+        speed = tiredSpeed;
+        yield return new WaitForSeconds(tiredDuration);
+        speed = normalSpeed;
+        isTired = false;
     }
 }
