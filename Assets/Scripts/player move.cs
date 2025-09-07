@@ -31,8 +31,8 @@ public class playermove : MonoBehaviour
     void Update()
     {
         //camera
-        mouseX += Input.GetAxis("Mouse X") * lookspeed;
-        mouseY -= Input.GetAxis("Mouse Y") * lookspeed;
+        mouseX += Input.GetAxisRaw("Mouse X") * lookspeed;
+        mouseY -= Input.GetAxisRaw("Mouse Y") * lookspeed;
 
         mouseY = Mathf.Clamp(mouseY, -85, 85);
 
