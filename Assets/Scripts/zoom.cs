@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class zoom : MonoBehaviour
 {
-    [SerializeField] float zoomSpeed = 10f;
-    public float minZoom = 5f;
-    public float maxZoom = 60f;
+    [SerializeField] float zoomSpeed;
+    [SerializeField] public float minZoom;
+    [SerializeField] public float maxZoom;
 
     private Camera cam;
 

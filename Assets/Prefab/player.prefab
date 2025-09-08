@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerRB: {fileID: 0}
-  _playerCam: {fileID: 0}
   _ground:
     serializedVersion: 2
     m_Bits: 0
@@ -213,6 +212,7 @@ GameObject:
   - component: {fileID: 2636851702197329902}
   - component: {fileID: 9157231209880387865}
   - component: {fileID: 3770379979303766422}
+  - component: {fileID: 1885164015518933771}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -295,6 +295,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4393587242319781115}
   m_Enabled: 1
+--- !u!114 &1885164015518933771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393587242319781115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a75c7d3fae2157479674cfb7856eab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomSpeed: 10
+  minZoom: 20
+  maxZoom: 30
 --- !u!1 &4908116029173203057
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,4 +417,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c690da903969978458df4e2b524eecc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  luz: {fileID: 8033156053265171400}
+  _light: {fileID: 0}
