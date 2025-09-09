@@ -5,7 +5,7 @@ using UnityEngine;
 public class fanstama : MonoBehaviour
 {
     public Rigidbody fantasmaRb;
-    public Transform playerTransform;
+    private Transform playerTransform;
     public float speed = 4;
 
     public AudioSource audioSource;
@@ -23,6 +23,9 @@ public class fanstama : MonoBehaviour
     void Start()
     {
         // Define uma direção inicial aleatória
+
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
         MudarDirecaoAleatoria();
     }
 

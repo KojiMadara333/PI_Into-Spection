@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.UI.GridLayoutGroup;
 
 
 public class playermove : MonoBehaviour
@@ -23,17 +20,14 @@ public class playermove : MonoBehaviour
     public AudioSource audioSource;
 
     private float normalSpeed = 5f;
-    private float runSpeed = 15f;
-    private float tiredSpeed = 2f;
-    private float tiredDuration = 4f;
-    private bool isTired = false;
-    //runSpeed: velocidade enquanto corre.
-    //tiredSpeed: velocidade quando está cansado.
-    //tiredDuration: tempo que o jogador fica cansado depois de correr.
-    //isTired: evita que o jogador corra se ainda estiver cansado.
+    private float runSpeed = 15f; //Velocidade enquanto corre.
+    private float tiredSpeed = 2f; //Velocidade quando está cansado.
+    private float tiredDuration = 4f;//Tempo que o jogador fica cansado depois de correr.
+
+    private bool isTired = false; //Evita que o jogador corra se ainda estiver cansado.
 
     // Start is called before the first frame update
-        void Start()
+    void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -44,32 +38,32 @@ public class playermove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //camera
+        //Camera
         mouseX += Input.GetAxisRaw("Mouse X") * lookspeed;
         mouseY -= Input.GetAxisRaw("Mouse Y") * lookspeed;
 
         mouseY = Mathf.Clamp(mouseY, -85, 85);
 
-        // rotacao do player
+        //Rotacao do player
         transform.rotation = Quaternion.Euler(0, mouseX, 0);
 
-        // cameraRotaion camera
+        //CameraRotaion camera
         _playerCam.transform.localRotation = Quaternion.Euler(mouseY, 0, 0);
 
-        // movimeto
+        //Movimeto
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
         movedi = (transform.forward * moveZ + transform.right * moveX).normalized * speed;
 
-        // pular
+        //Pular
         if (Input.GetButtonDown("Jump") && Physics.Raycast(transform.position, Vector3.down, 1.1f, _ground))
         {
             _playerRB.velocity = new Vector3(_playerRB.velocity.x, pulo, _playerRB.velocity.z);
         }
 
-        // correr
-        if (Input.GetKeyDown(KeyCode.C) && !isTired)
+        //Correr
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !isTired)
         {
             speed = runSpeed;
         }
