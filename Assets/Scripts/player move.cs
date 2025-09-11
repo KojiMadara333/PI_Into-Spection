@@ -21,6 +21,7 @@ public class playermove : MonoBehaviour
 
     private float normalSpeed = 5f;
     private float runSpeed = 15f; //Velocidade enquanto corre.
+
     private float tiredSpeed = 2f; //Velocidade quando está cansado.
     private float tiredDuration = 4f;//Tempo que o jogador fica cansado depois de correr.
 
@@ -29,9 +30,6 @@ public class playermove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
         _playerCam = Camera.main;
     }
 

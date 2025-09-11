@@ -1,81 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
-  //  private string 1;
+    [SerializeField] GameObject _menuObject, _manualMenuObject;
 
-    // Start is called before the first frame update
     void Start()
     {
         Debug.Log(" odeio voce no fundo da minha alma");
-       // SceneManager.LoadScene("inicio");
+
+        Time.timeScale = 0.0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartButton()
     {
-        
+        Time.timeScale = 1.0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        _menuObject.SetActive(false);
     }
 
-    public void Jogarbuttain()
+    public void ManualButton()
     {
-          SceneManager.LoadScene("jogo");
+        _menuObject.SetActive(false);
+
+        _manualMenuObject.SetActive(true);
     }
 
-    public void inicioButtaion()
+    public void BackButton()
     {
-        SceneManager.LoadScene("inicio");
+        if(_menuObject.activeSelf == false)
+        {
+            _manualMenuObject.SetActive(false);
+
+            _menuObject.SetActive(true);
+        }
     }
 
-    public void menuButtaion()
-    {
-        SceneManager.LoadScene("menu");
-    }
-
-    public void manualButtaion()
-    {
-        SceneManager.LoadScene("manual");
-    }
-
-    public void fimButtaion()
-    {
-        SceneManager.LoadScene("fim");
-    }
-
-    public void fase1Buttaion()
-    {
-        SceneManager.LoadScene("fase1");
-    }
-
-    public void fase2Buttaion()
-    {
-        SceneManager.LoadScene("fase2");
-    }
-
-    public void fase3Buttaion()
-    {
-        SceneManager.LoadScene("fase3");
-    }
-
-    public void fase4Buttaion()
-    {
-        SceneManager.LoadScene("fase4");
-    }
-
-    public void fase5Buttaion()
-    {
-        SceneManager.LoadScene("fase5");
-    }
-
-    public void fase6Buttaion()
-    {
-        SceneManager.LoadScene("fase6");
-    }
-
-    public void Sairbuttain()
+    public void ExitButton()
     {
         Application.Quit();
     }
