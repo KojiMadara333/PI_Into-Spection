@@ -43,8 +43,8 @@ public class playermove : MonoBehaviour
         _playerCam.transform.localRotation = Quaternion.Euler(mouseY, 0, 0);
 
         // movimeto
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveZ = Input.GetAxisRaw("Vertical");
 
         movedi = (transform.forward * moveZ + transform.right * moveX).normalized * speed;
 
