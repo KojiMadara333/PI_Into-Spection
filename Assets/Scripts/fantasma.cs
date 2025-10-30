@@ -12,6 +12,7 @@ public class fanstama : MonoBehaviour
 
     public float raioataque = 5f;
     public Transform posataque;
+    float raioOriginal;
 
     private bool jogadorDetectado = false;
 
@@ -22,10 +23,8 @@ public class fanstama : MonoBehaviour
 
     void Start()
     {
-        // Define uma direção inicial aleatória
-
+        raioOriginal = raioataque;
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-
         MudarDirecaoAleatoria();
     }
 
@@ -34,13 +33,9 @@ public class fanstama : MonoBehaviour
         DetectarJogador();
 
         if (jogadorDetectado)
-        {
             PerseguirJogador();
-        }
         else
-        {
             MovimentoAleatorio();
-        }
     }
 
     void OnDrawGizmosSelected()
@@ -52,7 +47,6 @@ public class fanstama : MonoBehaviour
         }
     }
 
-
     void DetectarJogador()
     {
         float distancia = Vector3.Distance(playerTransform.position, posataque.position);
@@ -60,12 +54,12 @@ public class fanstama : MonoBehaviour
         if (distancia <= raioataque)
         {
             jogadorDetectado = true;
-
-            // (Opcional) Tocar som ao detectar o jogador
             if (!audioSource.isPlaying)
-            {
                 audioSource.Play();
-            }
+        }
+        else
+        {
+            jogadorDetectado = false;
         }
     }
 
@@ -78,19 +72,26 @@ public class fanstama : MonoBehaviour
     void MovimentoAleatorio()
     {
         cronometroTroca += Time.deltaTime;
-
         if (cronometroTroca >= tempoTrocaDirecao)
         {
             MudarDirecaoAleatoria();
             cronometroTroca = 0f;
         }
 
-        fantasmaRb.velocity = direcaoAleatoria * speed * 0.5f; // move mais devagar no modo aleatório
+        fantasmaRb.velocity = direcaoAleatoria * speed * 0.5f;
     }
 
     void MudarDirecaoAleatoria()
     {
-        // Cria uma direção aleatória no plano XZ (horizontal)
         direcaoAleatoria = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f)).normalized;
+    }
+
+    // Método chamado pelo jogador
+    public void playerCorrendo(bool correndo)
+    {
+        if (correndo)
+            raioataque = raioOriginal * 2f;
+        else
+            raioataque = raioOriginal;
     }
 }

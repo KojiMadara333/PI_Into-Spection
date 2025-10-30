@@ -12,7 +12,6 @@ public class playermove : MonoBehaviour
     float speed = 5;
     int lookspeed = 10;
     int pulo = 7;
-    
 
     float mouseX, mouseY;
     Vector3 movedi;
@@ -20,57 +19,62 @@ public class playermove : MonoBehaviour
     public AudioSource audioSource;
 
     private float normalSpeed = 5f;
-    private float runSpeed = 15f; //Velocidade enquanto corre.
+    private float runSpeed = 15f;
+    private float tiredSpeed = 2f;
+    private float tiredDuration = 4f;
 
-    private float tiredSpeed = 2f; //Velocidade quando está cansado.
-    private float tiredDuration = 4f;//Tempo que o jogador fica cansado depois de correr.
+    private bool isTired = false;
+    private bool isRunning = false;
 
-    private bool isTired = false; //Evita que o jogador corra se ainda estiver cansado.
+    private fanstama fantasma; // referência ao fantasma
 
-    // Start is called before the first frame update
     void Start()
     {
         _playerCam = Camera.main;
+        fantasma = FindObjectOfType<fanstama>(); // encontra o fantasma na cena
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Camera
+        // Camera
         mouseX += Input.GetAxisRaw("Mouse X") * lookspeed;
         mouseY -= Input.GetAxisRaw("Mouse Y") * lookspeed;
-
         mouseY = Mathf.Clamp(mouseY, -85, 85);
 
-        //Rotacao do player
         transform.rotation = Quaternion.Euler(0, mouseX, 0);
-
-        //CameraRotaion camera
         _playerCam.transform.localRotation = Quaternion.Euler(mouseY, 0, 0);
 
-        //Movimeto
+        // Movimento
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
         movedi = (transform.forward * moveZ + transform.right * moveX).normalized * speed;
 
-        //Pular
+        // Pular
         if (Input.GetButtonDown("Jump") && Physics.Raycast(transform.position, Vector3.down, 1.1f, _ground))
         {
             _playerRB.velocity = new Vector3(_playerRB.velocity.x, pulo, _playerRB.velocity.z);
         }
 
-        //Correr
+        // Correr
         if (Input.GetKeyDown(KeyCode.LeftShift) && !isTired)
         {
             speed = runSpeed;
-        }
-        else if (Input.GetKeyUp(KeyCode.C) && !isTired)
-        {
-            // Inicia o estado de cansaço
-            StartCoroutine(GetTired());
+            isRunning = true;
+            if (fantasma != null)
+                fantasma.playerCorrendo(true);
         }
 
+        if (Input.GetKeyUp(KeyCode.LeftShift) && !isTired)
+        {
+            speed = normalSpeed;
+            isRunning = false;
+            if (fantasma != null)
+                fantasma.playerCorrendo(false);
+
+            // Inicia o cansaço
+            StartCoroutine(GetTired());
+        }
     }
 
     private void FixedUpdate()
