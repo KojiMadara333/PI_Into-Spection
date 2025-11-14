@@ -21,10 +21,10 @@ public class playermove : MonoBehaviour
     private float normalSpeed = 5f;
     private float runSpeed = 15f;
     private float tiredSpeed = 2f;
-    private float tiredDuration = 4f;
+    public float tiredDuration = 4f;
 
-    private bool isTired = false;
-    private bool isRunning = false;
+    public bool isTired = false;
+    public bool isRunning = false;
 
     private fanstama fantasma; // referência ao fantasma
 
