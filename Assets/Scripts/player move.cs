@@ -56,13 +56,13 @@ public class playermove : MonoBehaviour
 
         // correr
         // tem que colocar um tempo
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 20; // Dobra a velocidade
+            speed = 20;
         }
-        else if (Input.GetKeyUp(KeyCode.C))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 5; // Volta à velocidade normal ao soltar a tecla
+            speed = 5;
         }
 
     }
