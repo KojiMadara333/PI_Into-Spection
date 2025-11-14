@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 564897335826207688}
   - component: {fileID: -5053550170734032594}
   - component: {fileID: 2593549046589733208}
+  - component: {fileID: 3873048251275099301}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -200,6 +201,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3873048251275099301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416654783608387910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7df22d52f2402141a47384cc93dc178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRB: {fileID: 564897335826207688}
+  vida: {fileID: 0}
+  deaths: 0
 --- !u!1 &3469742104692407638
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +419,7 @@ GameObject:
   - component: {fileID: 7049457517709461505}
   - component: {fileID: 8033156053265171400}
   - component: {fileID: 3500589540180821552}
+  - component: {fileID: 3905928985210142561}
   m_Layer: 0
   m_Name: LANTERN
   m_TagString: Untagged
@@ -500,3 +517,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 0}
+--- !u!114 &3905928985210142561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4908116029173203057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
