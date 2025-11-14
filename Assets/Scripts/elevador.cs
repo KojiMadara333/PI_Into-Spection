@@ -46,7 +46,7 @@ public class elevador : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //para aqueles que não ta entendendo esta procramação é para o objeto que o player pegar colidir
+        //para aqueles que não ta entendendo esta procramação é para o objeto(bola, urso) que o player pegar colidir
         // com a porta do elevar e assim abrir
         if (collision.gameObject.CompareTag("objetos"))
         {
