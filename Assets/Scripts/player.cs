@@ -9,6 +9,15 @@ public class player : MonoBehaviour
     public TextMeshProUGUI vida;
     public float deaths = 0;
 
+    public GameObject telaGameOver;
+
+
+    void Start()
+    {
+        telaGameOver.SetActive(false);
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -17,7 +26,8 @@ public class player : MonoBehaviour
         if (deaths >= 1)
         {
             vida.text = "vida " + (life);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameOver();
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }
@@ -41,5 +51,11 @@ public class player : MonoBehaviour
     public void killPlayer()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GameOver()
+    {
+        telaGameOver.SetActive(true); // ativa a tela de Game Over
+        Time.timeScale = 0f; // congela o jogo
     }
 }
