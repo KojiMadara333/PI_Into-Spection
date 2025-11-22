@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{4f091712-c2bb-40e5-ab56-ec91c4ce977f}">
+		<property name="assetPath">
+			<value>Carro caindo e quebrando.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.7689795918367346</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2bc4a184-2bf8-47e4-b23d-70ace60cd165}</destination>
+		</relationship>
+	</object>
+</objects>

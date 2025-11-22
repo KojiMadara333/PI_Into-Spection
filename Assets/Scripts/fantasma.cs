@@ -8,7 +8,7 @@ public class fanstama : MonoBehaviour
     private Transform playerTransform;
     public float speed = 4;
 
-    public AudioSource audioSource;
+    // public AudioSource audioSource;
 
     public float raioataque = 5f;
     public Transform posataque;
@@ -36,6 +36,18 @@ public class fanstama : MonoBehaviour
             PerseguirJogador();
         else
             MovimentoAleatorio();
+
+        Vector3 direction = playerTransform.position - transform.position;
+        fantasmaRb.velocity = direction.normalized * speed;
+
+        // Rotaciona no eixo Y para olhar para o player (mantém na horizontal)
+        Vector3 lookDirection = direction;
+        lookDirection.y = 0; // Ignora a diferença de altura
+
+        if (lookDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(lookDirection);
+        }
     }
 
     void OnDrawGizmosSelected()
@@ -54,8 +66,8 @@ public class fanstama : MonoBehaviour
         if (distancia <= raioataque)
         {
             jogadorDetectado = true;
-            if (!audioSource.isPlaying)
-                audioSource.Play();
+            /*if (!audioSource.isPlaying)
+                audioSource.Play();*/
         }
         else
         {

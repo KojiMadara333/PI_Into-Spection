@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{4dea7f69-8807-4c0e-aaad-6566eee633b3}">
+		<property name="assetPath">
+			<value>Ghost4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.7678911564625852</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2bc4a184-2bf8-47e4-b23d-70ace60cd165}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{ee8e46ca-1861-4274-9a02-202ae9cdc17e}">
+		<property name="assetPath">
+			<value>Pegando item.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.57469387755102042</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2bc4a184-2bf8-47e4-b23d-70ace60cd165}</destination>
+		</relationship>
+	</object>
+</objects>
