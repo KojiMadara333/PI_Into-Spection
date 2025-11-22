@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class loopcima : MonoBehaviour
 {
-    public Rigidbody2D objetoRB;
-    int speed = 1;
+    public RectTransform texto;   // arraste o objeto de texto aqui
+    public float speed = 50f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        objetoRB.velocity = new Vector2(0, speed);
-    }
+    public float limiteSuperior = 800f;   // posição Y onde o texto "some"
+    public float limiteInferior = -800f;  // posição Y de onde ele reaparece
 
-    // Update is called once per frame
     void Update()
     {
-        if (transform.position.y >= 20)
+        // Move para cima usando UI (RectTransform)
+        texto.anchoredPosition += Vector2.up * speed * Time.deltaTime;
+
+        // Se passou do topo, volta para o início
+        if (texto.anchoredPosition.y >= limiteSuperior)
         {
-            transform.position = new Vector3(0, -20, 0);
+            texto.anchoredPosition = new Vector2(
+                texto.anchoredPosition.x,
+                limiteInferior
+            );
         }
     }
 }

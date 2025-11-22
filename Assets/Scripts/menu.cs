@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
     [SerializeField] GameObject _menuObject, _manualMenuObject;
+
+    public bool tempoAtivo = false;
 
     void Start()
     {
@@ -12,6 +15,14 @@ public class menu : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    void Update()
+    {
+        if (tempoAtivo == true)
+        {
+            Time.timeScale = 1.0f;
+        }
     }
 
     public void StartButton()
@@ -45,4 +56,15 @@ public class menu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void CreditoButton()
+    {
+        SceneManager.LoadScene("credito");
+    }
+
+    public void inicioButton()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
 }
