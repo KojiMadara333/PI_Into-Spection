@@ -7,6 +7,8 @@ public class menu : MonoBehaviour
 
     public bool tempoAtivo = false;
 
+    public playermove playerMoveScript;
+
     void Start()
     {
         Debug.Log(" odeio voce no fundo da minha alma");
@@ -15,6 +17,8 @@ public class menu : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        playerMoveScript.enabled = false;
     }
 
     void Update()
@@ -29,9 +33,10 @@ public class menu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+      //  Cursor.lockState = CursorLockMode.Locked;
+     //   Cursor.visible = false;
 
+        playerMoveScript.enabled = true;
         _menuObject.SetActive(false);
     }
 

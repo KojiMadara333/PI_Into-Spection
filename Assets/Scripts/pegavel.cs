@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class pegavel : MonoBehaviour
 {
+    [TextArea]
+    public string descricao; // <<< descrição do objeto
+
     private bool clicando = false;
     private Vector3 offset;
     private float zDist;
@@ -12,7 +15,6 @@ public class pegavel : MonoBehaviour
     {
         if (clicando)
         {
-            // Mantém o objeto na mesma distância da câmera
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = zDist;
 
@@ -25,16 +27,23 @@ public class pegavel : MonoBehaviour
     {
         clicando = true;
 
-        // Calcula a distância do objeto até a câmera
+        // Mostra a descrição do objeto
+        UIDescricao.Instance.MostrarDescricao(descricao);
+
         zDist = Vector3.Distance(transform.position, Camera.main.transform.position);
 
-        // Converte posição do mouse para mundo e calcula o deslocamento
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, zDist));
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(
+            new Vector3(Input.mousePosition.x, Input.mousePosition.y, zDist)
+        );
+
         offset = transform.position - mouseWorldPos;
     }
 
     private void OnMouseUp()
     {
         clicando = false;
+
+        // Esconde a descrição ao soltar
+        UIDescricao.Instance.EsconderDescricao();
     }
 }
