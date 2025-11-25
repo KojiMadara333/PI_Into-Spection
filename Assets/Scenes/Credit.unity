@@ -722,6 +722,7 @@ MonoBehaviour:
   _menuObject: {fileID: 0}
   _manualMenuObject: {fileID: 0}
   tempoAtivo: 1
+  playerMoveScript: {fileID: 0}
 --- !u!4 &1681369047
 Transform:
   m_ObjectHideFlags: 0
@@ -856,7 +857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 2077876247}
-  speed: 10
+  speed: 60
   limiteSuperior: 200
   limiteInferior: -200
 --- !u!114 &2077876250
