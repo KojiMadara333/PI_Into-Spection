@@ -64,7 +64,7 @@ public class menu : MonoBehaviour
 
     public void CreditoButton()
     {
-        SceneManager.LoadScene("credito");
+        SceneManager.LoadScene("Credit");
     }
 
     public void inicioButton()

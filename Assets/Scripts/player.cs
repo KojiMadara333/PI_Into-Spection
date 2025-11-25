@@ -40,7 +40,7 @@ public class player : MonoBehaviour
         if (life <= 0)
         {
             deaths += 1;
-            transform.position = new Vector3(0, 0, 0);
+            transform.position = new Vector3(-0.96f, 1f, -16.61f);
             playerRB.velocity = Vector2.zero;
               vida.text = "vida " + (life);
             life = 5;

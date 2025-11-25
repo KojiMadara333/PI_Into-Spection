@@ -164,7 +164,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3967563770229162444}
   cacheVersion: 131857
-  cacheTime: 638993991646431177
+  cacheTime: 638996301116420611
   SerializableEventsDict:
   - key: event:/1 - Footsteps/Walk & Run
     index: 0
@@ -309,7 +309,7 @@ MonoBehaviour:
   Path: Fmod Project/IS_SFXs/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638993991646410421
+  lastModified: 638996301116334216
   FileSizes:
   - Name: Desktop
     Value: 667264
@@ -329,7 +329,7 @@ MonoBehaviour:
   Path: Fmod Project/IS_SFXs/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638993991646431177
+  lastModified: 638996301116420611
   FileSizes:
   - Name: Desktop
     Value: 1354
