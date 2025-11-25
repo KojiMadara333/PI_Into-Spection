@@ -1587,7 +1587,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1444634817}
   - {fileID: 658730372}
   - {fileID: 1778655448}
   m_Father: {fileID: 0}
@@ -7262,6 +7261,10 @@ PrefabInstance:
     - target: {fileID: -7422151822734960208, guid: 49850b950ae234740b54e12cb062d467, type: 3}
       propertyPath: m_Name
       value: LightSquare
+      objectReference: {fileID: 0}
+    - target: {fileID: -7422151822734960208, guid: 49850b950ae234740b54e12cb062d467, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7395704305543789238, guid: 49850b950ae234740b54e12cb062d467, type: 3}
       propertyPath: m_Name
@@ -13798,7 +13801,7 @@ Transform:
   m_Children:
   - {fileID: 1688615364}
   - {fileID: 1674527945}
-  m_Father: {fileID: 237913481}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1444634818
 BoxCollider:
@@ -24145,6 +24148,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
+  - {fileID: 1444634817}
   - {fileID: 8518503070809860759}
   - {fileID: 237913481}
   - {fileID: 2089553256}
