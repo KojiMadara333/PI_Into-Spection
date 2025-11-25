@@ -34,7 +34,7 @@ public class nivel : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                SceneManager.LoadScene("Game");//coloca o nome da cena ai
+                SceneManager.LoadScene("Game1");//coloca o nome da cena ai
             }
         }
         if (fase2 == true)

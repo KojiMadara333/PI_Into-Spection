@@ -33,8 +33,8 @@ public class menu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
 
-      //  Cursor.lockState = CursorLockMode.Locked;
-     //   Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         playerMoveScript.enabled = true;
         _menuObject.SetActive(false);
@@ -69,7 +69,7 @@ public class menu : MonoBehaviour
 
     public void inicioButton()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game1");
     }
 
 }
