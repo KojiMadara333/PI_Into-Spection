@@ -8,11 +8,14 @@ public class nivel : MonoBehaviour
     public bool fase1 = false;
     public bool fase2 = false;
     public bool fase3 = false;
+    public bool venceu = false;
+
+    public GameObject telaDeVitoria;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        telaDeVitoria.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,7 +52,14 @@ public class nivel : MonoBehaviour
             }
         }
 
-
+        if (venceu == true)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                telaDeVitoria.SetActive(true);
+                Time.timeScale = 0.0f;
+            }
+        }
 
     }
 }
