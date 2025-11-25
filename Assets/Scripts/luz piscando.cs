@@ -3,11 +3,11 @@ using UnityEngine;
 public class luzpiscando : MonoBehaviour
 {
     public Light luz;                // Referência à _light
-    private bool luzLigada = true;  // Estado atual da _light
-    private float tempoTotal = 0f;  // Tempo desde o início
-    private float intervaloPiscar = 0.5f;  // Intervalo de piscar (em segundos)
-    private float tempoPiscar = 0f; // Temporizador para piscar
-    private bool comecarPiscar = false; // Controle para iniciar a piscada
+    public bool luzLigada = true;  // Estado atual da _light
+    public float tempoTotal = 0f;  // Tempo desde o início
+    public float intervaloPiscar = 0.5f;  // Intervalo de piscar (em segundos)
+    public float tempoPiscar = 0f; // Temporizador para piscar
+    public bool comecarPiscar = false; // Controle para iniciar a piscada
 
     void Update()
     {
