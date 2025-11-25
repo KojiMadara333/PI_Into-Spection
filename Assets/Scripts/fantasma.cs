@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class fanstama : MonoBehaviour
 {
+    [Header("Componentes")]
     public Rigidbody fantasmaRb;
-    private Transform playerTransform;
-    public float speed = 4;
-
-    // public AudioSource audioSource;
-
-    public float raioataque = 5f;
     public Transform posataque;
-    float raioOriginal;
 
+    [Header("Configurações de Perseguição")]
+    public float speed = 4f;
+    public float raioataque = 5f;
+
+    [Header("Configurações de Patrulha")]
+    public float speedPatrulha = 2f;
+    public float tempoTrocaDirecao = 2f;
+
+    // Privadas
+    private Transform playerTransform;
+    private float raioOriginal;
     private bool jogadorDetectado = false;
-
-    // Movimento aleatório
     private Vector3 direcaoAleatoria;
-    private float tempoTrocaDirecao = 2f; // tempo entre mudanças de direção
     private float cronometroTroca = 0f;
 
     void Start()
@@ -33,20 +35,12 @@ public class fanstama : MonoBehaviour
         DetectarJogador();
 
         if (jogadorDetectado)
-            PerseguirJogador();
-        else
-            MovimentoAleatorio();
-
-        Vector3 direction = playerTransform.position - transform.position;
-        fantasmaRb.velocity = direction.normalized * speed;
-
-        // Rotaciona no eixo Y para olhar para o player (mantém na horizontal)
-        Vector3 lookDirection = direction;
-        lookDirection.y = 0; // Ignora a diferença de altura
-
-        if (lookDirection != Vector3.zero)
         {
-            transform.rotation = Quaternion.LookRotation(lookDirection);
+            PerseguirJogador();
+        }
+        else
+        {
+            MovimentoAleatorio();
         }
     }
 
@@ -54,7 +48,7 @@ public class fanstama : MonoBehaviour
     {
         if (posataque != null)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = jogadorDetectado ? Color.red : Color.yellow;
             Gizmos.DrawWireSphere(posataque.position, raioataque);
         }
     }
@@ -62,35 +56,50 @@ public class fanstama : MonoBehaviour
     void DetectarJogador()
     {
         float distancia = Vector3.Distance(playerTransform.position, posataque.position);
+        jogadorDetectado = distancia <= raioataque;
 
-        if (distancia <= raioataque)
-        {
-            jogadorDetectado = true;
-            /*if (!audioSource.isPlaying)
-                audioSource.Play();*/
-        }
-        else
-        {
-            jogadorDetectado = false;
-        }
+        // Descomente quando adicionar o áudio
+        /*if (jogadorDetectado && !audioSource.isPlaying)
+            audioSource.Play();
+        else if (!jogadorDetectado && audioSource.isPlaying)
+            audioSource.Stop();*/
     }
 
     void PerseguirJogador()
     {
-        Vector3 direcao = (playerTransform.position - transform.position).normalized;
-        fantasmaRb.velocity = direcao * speed;
+        // Direção para o jogador
+        Vector3 direcao = (playerTransform.position - transform.position);
+        direcao.y = 0; // Mantém na horizontal
+
+        // Move em direção ao jogador
+        fantasmaRb.velocity = direcao.normalized * speed;
+
+        // Rotaciona para olhar o jogador
+        if (direcao != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(direcao);
+        }
     }
 
     void MovimentoAleatorio()
     {
         cronometroTroca += Time.deltaTime;
+
         if (cronometroTroca >= tempoTrocaDirecao)
         {
             MudarDirecaoAleatoria();
             cronometroTroca = 0f;
         }
 
-        fantasmaRb.velocity = direcaoAleatoria * speed * 0.5f;
+        // Aplica velocidade de patrulha (mais lenta)
+        fantasmaRb.velocity = direcaoAleatoria * speedPatrulha;
+
+        // Rotaciona suavemente na direção do movimento
+        if (direcaoAleatoria != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(direcaoAleatoria);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2f);
+        }
     }
 
     void MudarDirecaoAleatoria()
@@ -98,12 +107,9 @@ public class fanstama : MonoBehaviour
         direcaoAleatoria = new Vector3(Random.Range(-1f, 1f), 0f, Random.Range(-1f, 1f)).normalized;
     }
 
-    // Método chamado pelo jogador
+    // Chamado pelo script de movimento do player
     public void playerCorrendo(bool correndo)
     {
-        if (correndo)
-            raioataque = raioOriginal * 2f;
-        else
-            raioataque = raioOriginal;
+        raioataque = correndo ? raioOriginal * 2f : raioOriginal;
     }
 }
