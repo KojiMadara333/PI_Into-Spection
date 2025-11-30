@@ -12,6 +12,8 @@ public class nivel : MonoBehaviour
 
     public GameObject telaDeVitoria;
 
+    public bool aberto = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +31,31 @@ public class nivel : MonoBehaviour
         // me pediram para fazer um negocio que quando o player colide passar de fase
         // mas pelo que eu entedi vai ter mais de uma fase então eu fiz isso
         // voce pode escolher qual fase sera quando colidir
-
-        if (fase1 == true)
+        if (aberto)
+        {
+            if (fase1 == true)
+            {
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    SceneManager.LoadScene("Game1");//coloca o nome da cena ai
+                }
+            }
+            if (fase2 == true)
+            {
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    SceneManager.LoadScene("Game2");//coloca o nome da cena ai
+                }
+            }
+            if (fase3 == true)
+            {
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    SceneManager.LoadScene("");//coloca o nome da cena ai
+                }
+            }
+        }
+        /*if (fase1 == true)
         {
             if (collision.gameObject.CompareTag("Player"))
             {
@@ -50,7 +75,7 @@ public class nivel : MonoBehaviour
             {
                 SceneManager.LoadScene("");//coloca o nome da cena ai
             }
-        }
+        }*/
 
         if (venceu == true)
         {
@@ -58,7 +83,15 @@ public class nivel : MonoBehaviour
             {
                 telaDeVitoria.SetActive(true);
                 Time.timeScale = 0.0f;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
             }
+        }
+
+        if (collision.gameObject.CompareTag("objetos"))
+        {
+            Destroy(collision.gameObject);
+            aberto = true;
         }
 
     }

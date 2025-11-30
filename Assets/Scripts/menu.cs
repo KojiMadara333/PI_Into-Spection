@@ -11,7 +11,7 @@ public class menu : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(" odeio voce no fundo da minha alma");
+        Debug.Log("Odeio voce no fundo da minha alma");
 
         Time.timeScale = 0.0f;
 
@@ -71,5 +71,7 @@ public class menu : MonoBehaviour
     {
         SceneManager.LoadScene("Game1");
     }
+
+    
 
 }

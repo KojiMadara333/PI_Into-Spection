@@ -18,7 +18,7 @@ public class fanstama : MonoBehaviour
 
     // Privadas
     private Transform playerTransform;
-    private float raioOriginal;
+    public float raioOriginal;
     private bool jogadorDetectado = false;
     private Vector3 direcaoAleatoria;
     private float cronometroTroca = 0f;
@@ -67,6 +67,8 @@ public class fanstama : MonoBehaviour
 
     void PerseguirJogador()
     {
+        raioataque = posataque ? raioOriginal * 2f : raioOriginal;
+
         // Direção para o jogador
         Vector3 direcao = (playerTransform.position - transform.position);
         direcao.y = 0; // Mantém na horizontal

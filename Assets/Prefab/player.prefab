@@ -95,7 +95,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416654783608387910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42113f40e1b7b9f42af34630115f4cb1, type: 3}
   m_Name: 
@@ -105,6 +105,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   audioSource: {fileID: 2593549046589733208}
+  tiredDuration: 4
+  isTired: 0
+  isRunning: 0
 --- !u!82 &2593549046589733208
 AudioSource:
   m_ObjectHideFlags: 0
@@ -214,8 +217,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRB: {fileID: 564897335826207688}
+  life: 5
   vida: {fileID: 0}
   deaths: 0
+  telaGameOver: {fileID: 0}
 --- !u!1 &3469742104692407638
 GameObject:
   m_ObjectHideFlags: 0

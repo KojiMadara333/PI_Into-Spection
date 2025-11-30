@@ -15,22 +15,42 @@ public class player : MonoBehaviour
     void Start()
     {
         telaGameOver.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        
+
+
         vida.text = "vida " + (life);
 
         if (deaths >= 1)
         {
             vida.text = "vida " + (life);
             GameOver();
+            mouseaberto();
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }
+
+    private void mousetrava()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void mouseaberto()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+    }
+
 
     public void ResetPlayer()
     {
@@ -57,5 +77,6 @@ public class player : MonoBehaviour
     {
         telaGameOver.SetActive(true); // ativa a tela de Game Over
         Time.timeScale = 0f; // congela o jogo
+        mouseaberto();
     }
 }
